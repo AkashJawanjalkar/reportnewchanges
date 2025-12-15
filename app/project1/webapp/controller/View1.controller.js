@@ -2068,6 +2068,8 @@ sap.ui.define([
             else if (sKey === "SKUComponent") {
                 this.byId("filterBar").setVisible(true);
                 this.byId("SKUFilterBoxId").setVisible(true);
+                this.byId("goButton").setVisible(true);
+
              //   this.byId("fromToDateBoxId").setVisible(false);
                 this.byId("DateRangeBoxId").setVisible(false);
                 this.byId("SKURadioButtonBoxId").setVisible(true);
@@ -2092,6 +2094,7 @@ sap.ui.define([
                 this.byId("fromToDateBoxId").setVisible(false);
                 this.byId("SKURadioButtonBoxId").setVisible(false);
                 this.byId("DateRangeBoxId").setVisible(true);
+                 this.byId("goButton").setVisible(true);
 
                 this.byId("auditToggleBox").setVisible(false);
                 this.byId("InactiveUserToggleBox").setVisible(false);
@@ -2112,7 +2115,7 @@ sap.ui.define([
                 this.byId("fromToDateBoxId").setVisible(false);
                 this.byId("SKURadioButtonBoxId").setVisible(false);
                 this.byId("DateRangeBoxId").setVisible(true);
-
+                 this.byId("goButton").setVisible(true);
                 this.byId("auditToggleBox").setVisible(false);
                 this.byId("InactiveUserToggleBox").setVisible(false);
             //    this.byId("filterBar").setVisible(false);
