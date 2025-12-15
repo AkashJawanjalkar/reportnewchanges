@@ -292,7 +292,7 @@
                         visible="false"
                     >
                         <m:Label
-                            text="Packagingggggggggggggggggg Site:"
+                            text="Packaging Site:"
                             class="sapUiSmallMarginEnd"
                         />
 
@@ -664,7 +664,7 @@
                     visible="false"
                 >
                     <m:Label
-                        text="Packaging========> Site:"
+                        text="Packaging Site:"
                         class="sapUiSmallMarginEnd"
                     />
                     <m:MultiInput
@@ -968,7 +968,7 @@
                 >
                     <HBox>
                         <m:Label
-                            text="Packaging=========> Site:"
+                            text="Packaging Site:"
                             class="sapUiTinyMarginTop sapUiTinyMarginBottom"
                         />
                         <m:Input
