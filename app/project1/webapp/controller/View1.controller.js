@@ -1074,7 +1074,7 @@ sap.ui.define([
             this._aOriginalCMSClosed = data;
             this.getView().getModel("sku").setProperty("/aCMSClose", data);
 
-         //   console.log("closed", data);
+            console.log("closed-------------------------->", data);
 
 
         },
@@ -3997,6 +3997,7 @@ sap.ui.define([
 
             if (!sGlobalSPCCode && !sPackingSiteSKU && !sPackingSiteCode && !oStartDate && !oEndDate) {
                 oModel.setProperty("/aSKUData", aSource);
+                 this._createTable("SKUComponent", aSource);
                 return;
             }
 
@@ -4234,6 +4235,7 @@ sap.ui.define([
 
             if (!sGlobalSPCCode && !sPackingSiteSKU && !sPackingSiteCode) {
                 oModel.setProperty("/aCMSWip", aSource);
+                  this._createTable("CMSWIP", aSource);
                 return;
             }
 
@@ -4501,11 +4503,13 @@ sap.ui.define([
 
 
             var aSource = this._aOriginalCMSClosed;
+            console.log("kkkkkkkk-------->",aSource);
 
             var oModel = this.getView().getModel("sku");
 
             if (!sGlobalSPCCode && !sPackingSiteSKU && !sPackingSiteCode) {
                 oModel.setProperty("/aCMSClose", aSource);
+                this._createTable("CMSClosed", aSource);
                 return;
             }
 
